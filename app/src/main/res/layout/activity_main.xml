@@ -10,6 +10,7 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/titretext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -17,14 +18,15 @@
         android:gravity="center"
         android:padding="30dp"
         android:text="Mesure de niveau de glycémie"
-        android:textSize="25sp"
 
+        android:textSize="25sp"
         android:textStyle="bold" />
 
     <TextView
-        android:layout_marginTop="20dp"
+        android:id="@+id/agetext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="Votre âge :"
         android:textSize="25sp" />
     <SeekBar
@@ -78,14 +80,14 @@
 
     <EditText
 
+        android:id="@+id/etValeur"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:textSize="25sp"
         android:hint="Valeur mesurée (en mmol/l)"
         android:inputType="numberDecimal"
 
-        />
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/btnConsulter"
